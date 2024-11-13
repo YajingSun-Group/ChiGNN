@@ -63,7 +63,7 @@ columns_data = {
 }
 
 with open(f'singlecsv/{columns_data[column]}_graph_data.pkl', 'rb') as f:
-    data_graphs, data_graph_informations, props, big_index = pickle.load(f)
+    data_graphs, data_graph_informations,  big_index = pickle.load(f)
 
 HPLC = pd.read_csv(f'singlecsv/{columns_data[column]}.csv')
 alpha_values = HPLC['alpha'].values
