@@ -40,7 +40,7 @@ columns_data = {
 
 # 加载数据集
 with open(f'alphacsv/{columns_data[column]}_graph_data.pkl', 'rb') as f:
-    data_graphs, data_graph_informations, props, big_index = pickle.load(f) 
+    data_graphs, data_graph_informations,  big_index = pickle.load(f) 
 
 # 加载 CSV 文件中的 alpha 列
 HPLC = pd.read_csv(f'alphacsv/{columns_data[column]}.csv')
