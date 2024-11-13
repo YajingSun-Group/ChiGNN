@@ -1,6 +1,8 @@
 # ChiGNN: Interpretable Algorithm Framework of Molecular Chiral Knowledge-Embedding and Stereo-Sensitive Properties Prediction  
 This document describes the codes used in the experiments and how to replicate them.
-![[20241111-Figure.png]]
+
+<img src="\20241111-Figure.png" alt="20241111-Figure" style="zoom: 25%;" />
+
 ## Environment
 The following packages are required.
 - python=3.10
