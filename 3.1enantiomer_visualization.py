@@ -81,6 +81,9 @@ def calculate_atom_contributions(edge_index, attributions):
 
 def atom_attribution_visualize(smiles, atom_attribution, save_path='./image', cmap_name='coolwarm', show_values=False):
     mol = Chem.MolFromSmiles(smiles)
+    smiles = Chem.MolToSmiles(mol)
+    smiles = smiles.split('.')[0]
+    mol = Chem.MolFromSmiles(smiles)
     mol = Chem.RemoveHs(mol)  # 不显示氢原子
     cmap = plt.get_cmap(cmap_name, 10)
     norm = matplotlib.colors.Normalize(vmin=-1, vmax=1)
