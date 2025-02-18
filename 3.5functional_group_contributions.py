@@ -29,6 +29,9 @@ def return_fg_without_c_i_wash(fg_with_c_i, fg_without_c_i):
 
 def return_fg_hit_atom(smiles, fg_name_list, fg_with_ca_list, fg_without_ca_list):
     mol = Chem.MolFromSmiles(smiles)
+    smiles = Chem.MolToSmiles(mol)
+    smiles = smiles.split('.')[0]
+    mol = Chem.MolFromSmiles(smiles)
     hit_at = []
     hit_fg_name = []
     all_hit_fg_at = []
