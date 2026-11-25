@@ -95,3 +95,6 @@ python 5.2cluster_html.py
 ## Drawing
 The drawing program involved in this work is written in drawing.ipynb. It can be drawn and modified as needed.
 
+## License
+
+Original code in this repository may be used, copied, and modified for non-commercial academic research, teaching, and reproducibility. Commercial use requires prior written permission from the copyright holder. Third-party materials remain subject to their own licenses. See [LICENSE](LICENSE).
